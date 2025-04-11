@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>삼창컴퍼니</title>
+  <meta name="description" content="삼창컴퍼니 - 마케팅 회사 홈페이지">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- CSS를 별도의 파일로 관리하거나 내부에 직접 작성할 수 있습니다. 아래는 예시입니다. -->
+  <style>
+    body {
+      margin: 0;
+      font-family: sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      background: #f8f8f8;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #ffffff;
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+    }
+    nav li {
+      margin: 0 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    .hero {
+      /* 배경 이미지를 삭제하고, 단색 배경 처리 예시 */
+      background: #444;
+      color: white;
+      padding: 100px 20px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+    }
+    .section {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    .service-item {
+      flex: 1 1 calc(33.33% - 20px);
+      box-sizing: border-box;
+      margin: 10px;
+      padding: 20px;
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      text-align: center;
+    }
+    .about {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+    }
+    .about-text {
+      flex: 1 1 500px;
+      margin-right: 20px;
+    }
+    .about-text h2 {
+      margin-top: 0;
+    }
+    /* 이미지 태그 자체를 제거했으므로 아래와 같은 스타일은 필요치 않으나,
+       혹시 향후 이미지를 추가할 수 있으니 주석으로 남겨둡니다.
+    .about img {
+      max-width: 400px;
+      width: 100%;
+      margin-top: 20px;
+      border: 1px solid #ddd;
+    }
+    */
+    footer {
+      background: #f8f8f8;
+      padding: 40px 20px;
+      text-align: center;
+      border-top: 1px solid #ddd;
+      line-height: 1.8;
+    }
+  </style>
+</head>
+<body>
+  <!-- 헤더 -->
+  <header>
+    <h1>삼창컴퍼니</h1>
+    <p>당신의 성공을 위한 최고의 마케팅 파트너</p>
+  </header>
+
+  <!-- 네비게이션 -->
+  <nav>
+    <ul>
+      <li><a href="#services">서비스</a></li>
+      <li><a href="#about">회사 소개</a></li>
+      <li><a href="#contact">연락하기</a></li>
+    </ul>
+  </nav>
+
+  <!-- 메인 히어로 섹션 -->
+  <section class="hero">
+    <h1>최고의 마케팅 솔루션</h1>
+    <p>당신의 브랜드 가치를 높이고, 비즈니스를 확장하십시오.</p>
+  </section>
+
+  <!-- 서비스 섹션 -->
+  <section id="services" class="section">
+    <h2 class="section-title">우리의 서비스</h2>
+    <div class="services">
+      <div class="service-item">
+        <h3>마케팅 전략 컨설팅</h3>
+        <p>성공적인 마케팅을 위한 맞춤 전략을 제공합니다.</p>
+      </div>
+      <div class="service-item">
+        <h3>디지털 마케팅</h3>
+        <p>온라인 광고, SNS, 콘텐츠 마케팅 등 종합 솔루션을 지원합니다.</p>
+      </div>
+      <div class="service-item">
+        <h3>브랜딩 & 디자인</h3>
+        <p>브랜드 아이덴티티 확립과 디자인 제작을 통해 인지도를 높입니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 회사 소개 섹션 -->
+  <section id="about" class="section">
+    <h2 class="section-title">회사 소개</h2>
+    <div class="about">
+      <div class="about-text">
+        <h2>삼창컴퍼니는...</h2>
+        <p>
+          국내외 다양한 산업 분야에서 축적한 경험과 노하우를 바탕으로 
+          고객사의 비즈니스 목표 달성을 위한 종합 마케팅 서비스를 제공합니다.
+          고객과 함께 성장하며, 혁신적인 아이디어와 전략으로 경쟁력을 
+          강화하는 것을 목표로 하고 있습니다.
+        </p>
+        <p>
+          데이터 분석, 디지털 기술, 크리에이티브 팀의 협업을 통해 
+          고객사의 브랜드 가치를 극대화하고, 시장에서의 입지를 강화할 수 있도록 
+          돕고 있습니다.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 연락처 섹션 -->
+  <section id="contact" class="section">
+    <h2 class="section-title">연락하기</h2>
+    <p>궁금한 점이나 문의 사항이 있으시면 언제든 연락주세요.</p>
+    <p>
+      <strong>전화:</strong> 010-6495-8864<br>
+      <strong>이메일:</strong> <a href="mailto:whitetree1288@naver.com">whitetree1288@naver.com</a><br>
+      <strong>주소:</strong> 전라남도 목포시 석현로 46,<br>
+      목포벤처문화산업지원센터 벤처동 101호(석현동)
+    </p>
+    <!-- 카카오 채널톡 문의 바로 가기 링크 -->
+    <p>
+      <a href="http://pf.kakao.com/_JAxcPn/chat" target="_blank" style="text-decoration: none; font-weight: bold;">
+        채널톡 문의 바로가기
+      </a>
+    </p>
+
+    <!-- 간단한 문의 폼 예시 -->
+    <form>
+      <label for="name">이름:</label><br>
+      <input type="text" id="name" name="name" placeholder="홍길동"><br><br>
+
+      <label for="email">이메일:</label><br>
+      <input type="email" id="email" name="email" placeholder="your@email.com"><br><br>
+
+      <label for="message">메시지:</label><br>
+      <textarea id="message" name="message" rows="5" placeholder="문의 내용을 입력하세요"></textarea><br><br>
+
+      <button type="submit">문의 보내기</button>
+    </form>
+  </section>
+
+  <!-- 푸터 -->
+  <footer>
+    <p>Copyright © 2025 삼창컴퍼니. All rights reserved.</p>
+    <p>
+      통신판매업신고번호 2025-전남목포-0106호<br>
+      전라남도 목포시 석현로 46, 목포벤처문화산업지원센터 벤처동 101호(석현동) <br>
+      대표 김영길 / 연락처 010-6495-8864
+    </p>
+  </footer>
+</body>
+</html>
